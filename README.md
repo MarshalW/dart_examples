@@ -7,4 +7,4 @@
 
 ## 版本
 
-- fetch_http，通过异步HTTP获取数据
+- `fetch_http`，通过异步HTTP获取数据
