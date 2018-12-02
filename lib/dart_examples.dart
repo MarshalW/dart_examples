@@ -1,3 +1,7 @@
+// 如果需要将restful传回的js数组convert为dart对象，可参考：
+// https://github.com/dart-lang/json_serializable/issues/135
+// var myThing = (JSON.decode(stuff) as List).map((e) => new MyClass.fromJson(e)).toList();
+
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
