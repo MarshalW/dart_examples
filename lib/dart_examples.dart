@@ -7,15 +7,11 @@ import 'package:http/http.dart' as http;
 
 // 一个免费的新闻restful api
 var url =
-    'https://newsapi.org/v1/articles?apikey=3e22f2fcc1344975ae2b2e69379e2a6e&sortBy=latest&source=techcrunch';
+    'https://newsapi.org/v1/articles?apikey=3e22f2fcc1344975ae2b2e69379e2a6e&sortBy=latest&source=techcrunch';    
 
 Future<Result> get() async {
   var res = await http.get(url);
   return Result.fromJson(json.decode(res.body));
-}
-
-int calculate() {
-  return 6 * 7;
 }
 
 class Result {
@@ -25,5 +21,23 @@ class Result {
 
   factory Result.fromJson(Map<String, dynamic> json) {
     return Result(message: json['message']);
+  }
+}
+
+var githubUrl='https://api.github.com/users?per_page=5';
+
+Future<List<User>>getUsers() async {
+  var res=await http.get(githubUrl);
+  var users=(json.decode(res.body) as List).map((e)=>new User.fromJson(e)).toList();
+  return users;
+}
+
+class User{
+  final String userName;
+
+  User({this.userName});
+
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(userName: json['login']);
   }
 }
