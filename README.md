@@ -1,4 +1,10 @@
-A sample command-line application.
+# Dart技术准备示例
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+## 生成项目
+
+- 使用[stagehand](https://github.com/dart-lang/stagehand)
+- 创建`console-full`项目
+
+## 版本
+
+- 
