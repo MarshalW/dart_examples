@@ -7,4 +7,5 @@
 
 ## 版本
 
+- `stream_controller`，使用`StreamController`的示例
 - `fetch_http`，通过异步HTTP获取数据
