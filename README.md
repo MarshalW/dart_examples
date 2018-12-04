@@ -7,6 +7,7 @@
 
 ## 版本
 
+- `mixin`，使用mixin实现功能的示例
 - `factory`，使用工厂方法实现单例模式示例
 - `implement_interface`，使用dart的继承类和实现接口
 - `stream_controller`，使用`StreamController`的示例

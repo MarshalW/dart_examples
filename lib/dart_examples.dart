@@ -1,23 +1,8 @@
-abstract class Product {
-  static Product _singleton = _Product('--');
+class Product with Useage {}
 
-  factory Product() {
-    return _singleton;
+mixin Useage {
+  toString() {
+    print('from Useage');
+    return 'usage';
   }
-
-  void update({name});
-}
-
-class _Product implements Product {
-  String _name;
-
-  String get name => _name;
-
-  void update({name}) {
-    _name = name;
-  }
-
-  toString()=>'Product, name: $_name';
-
-  _Product(this._name);
 }
