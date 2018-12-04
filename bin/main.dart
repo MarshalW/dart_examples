@@ -1,5 +1,10 @@
-import 'package:dart_examples/dart_examples.dart' as dart_examples;
+// https://www.dartlang.org/guides/language/language-tour#constructors
+// 运用factory constructor，实现singleton pattern
+import 'package:dart_examples/dart_examples.dart';
 
 main(List<String> arguments) {
-  print('Hello world: ${dart_examples.calculate()}!');
+  Product p = Product();
+  print('$p');
+  p.update(name: 'Joe');
+  print('$p');
 }
