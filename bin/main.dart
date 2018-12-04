@@ -1,5 +1,6 @@
 import 'package:dart_examples/dart_examples.dart' as dart_examples;
 
 main(List<String> arguments) {
-  print('Hello world: ${dart_examples.calculate()}!');
+  var user=new dart_examples.Client('Joe');
+  user.buy(100.0);
 }
