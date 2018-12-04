@@ -7,5 +7,6 @@
 
 ## 版本
 
+- `implement_interface`，使用dart的继承类和实现接口
 - `stream_controller`，使用`StreamController`的示例
 - `fetch_http`，通过异步HTTP获取数据
