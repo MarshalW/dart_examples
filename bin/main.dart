@@ -1,5 +1,6 @@
-import 'package:dart_examples/dart_examples.dart' as dart_examples;
+import 'package:dart_examples/dart_examples.dart';
 
 main(List<String> arguments) {
-  print('Hello world: ${dart_examples.calculate()}!');
+  var container = Container();
+  container.showInfo();
 }
